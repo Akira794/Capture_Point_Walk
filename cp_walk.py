@@ -37,7 +37,6 @@ class CapturePointWalk():
         self.__count  = 0
         self.__dt = dt
         self.__foot_list = foot
-        self.__k = k
         self.__w = sqrt(g/Zc)
 
         self.__xc, self.__yc = 0.0, 0.0
@@ -46,13 +45,6 @@ class CapturePointWalk():
         self.__dxci, self.__dyci = 0.0, 0.0
         self.__xci, self.__yci = 0.0, 0.0
         self.__px, self.__py = 0.0, 0.0
-
-        #euler ver.
-        self.__cpx = self.__xc + self.__dxc/self.__w
-        self.__cpy = self.__yc + self.__dyc/self.__w
-
-        self.__ddxc = ((self.__xc - self.__cpx * self.__k)*g)/Zc
-        self.__ddyc = ((self.__yc - self.__cpy * self.__k)*g)/Zc
 
     def set_footstep(self):
         for step in range(len(self.__foot_list)):
