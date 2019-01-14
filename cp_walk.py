@@ -32,7 +32,7 @@ class CapturePointWalk():
     regiony_list = []
 
     count = 0
-    def __init__(self, period, dt, foot, k):
+    def __init__(self, period, dt, foot):
         self.__period = period
         self.__count  = 0
         self.__dt = dt
@@ -143,7 +143,7 @@ class CapturePointWalk():
         plt.show()
 
 def main():
-    CP = CapturePointWalk(0.4,0.01,foot_list,1)
+    CP = CapturePointWalk(0.4,0.01,foot_list)
     CP.set_footstep()
     CP.calc_cog_trajectory()
     CP.plot_gait_pattern_list()
