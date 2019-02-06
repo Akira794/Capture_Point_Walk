@@ -15,5 +15,5 @@ include_directories(
 	${EIGEN3_INCLUDE_DIR}
 )
 
-add_executable(GenerateWalkPattern main.cpp CapturePointControl.cpp CapturePointControl.h)
+add_executable(GenerateWalkPattern main.cpp CapturePointControl.cpp CapturePointControl.h FootPlanner.cpp FootPlanner.h)
 target_link_libraries(GenerateWalkPattern ${Boost_LIBRARIES})
