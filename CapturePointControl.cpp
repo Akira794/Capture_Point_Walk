@@ -12,7 +12,7 @@ void CapturePointControl::set_footstep(){
 
 }
 
-void CapturePointControl::ref_cp_petterngenerator(){
+void CapturePointControl::ref_cp_patterngenerator(){
     size_t foot_step_count = 1;
 	size_t size = foot_step_list.size();
     for(int step = 0; step < size; step++){

@@ -65,7 +65,7 @@ class CapturePointControl
 
         }
         void set_footstep();
-        void ref_cp_petterngenerator();
+        void ref_cp_patterngenerator();
         void RungeKutta();
         void capture_point_control(int time);
         void update();
