@@ -1,2 +1,2 @@
 # Capture_Point_Walk
-Capture Point Walk for python  Euler and RungeKutta
+Capture Point Walk using differential equation (Euler and RungeKutta)
